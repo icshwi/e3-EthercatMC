@@ -1,0 +1,10 @@
+digraph EthercatMC {
+node [shape=record];
+base [label="base 7.0.3"]
+require [label="require 3.1.1"]
+ASYN [label="ASYN 4.33.0"]
+MOTOR [label="MOTOR 7.0.1"]
+EthercatMC [label="EthercatMC 3.0.0"]
+base -> require -> { ASYN,MOTOR } ->  {  EthercatMC  } 
+} 
+
