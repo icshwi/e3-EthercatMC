@@ -43,13 +43,16 @@ USR_INCLUDES += -I$(where_am_I)$(APPSRC)
 
 TEMPLATES += $(wildcard $(APPDB)/*.template)
 
+SOURCES += $(APPSRC)/EthercatMCADS.cpp
 SOURCES += $(APPSRC)/EthercatMCAxis.cpp
-SOURCES += $(APPSRC)/EthercatMCController.cpp 
-SOURCES += $(APPSRC)/EthercatMCHelper.cpp 
+SOURCES += $(APPSRC)/EthercatMCController.cpp
+SOURCES += $(APPSRC)/EthercatMCHelper.cpp
+SOURCES += $(APPSRC)/EthercatMCIndexerAxis.cpp
+SOURCES += $(APPSRC)/EthercatMCIndexer.cpp
 
 DBDS    += $(APPSRC)/EthercatMcSupport.dbd
 
-
+SCRIPTS += $(wildcard ./iocsh/*.iocsh)
 
 .PHONY: vlibs db
 
