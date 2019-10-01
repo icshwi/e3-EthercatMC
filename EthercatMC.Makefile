@@ -52,7 +52,7 @@ SOURCES += $(APPSRC)/EthercatMCIndexer.cpp
 
 DBDS    += $(APPSRC)/EthercatMcSupport.dbd
 
-SCRIPTS += $(wildcard ./iocsh/*.iocsh)
+SCRIPTS += $(wildcard $(APP)/iocsh/*.iocsh)
 
 .PHONY: vlibs db
 
