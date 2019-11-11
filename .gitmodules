@@ -1,4 +1,4 @@
 [submodule "m-epics-EthercatMC"]
 	path = m-epics-EthercatMC
 	url = https://github.com/EuropeanSpallationSource/m-epics-EthercatMC.git
-	ignore = all
+	ignore = dirty
